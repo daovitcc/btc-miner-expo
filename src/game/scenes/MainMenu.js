@@ -12,7 +12,11 @@ export class MainMenu extends Scene
 
     create ()
     {
-        this.add.image(900, 540, 'background'); 
+        this.add.image(900, 540, 'mainmenubg');
+
+        const logodao = this.add.image(512, 100, 'daologo');
+        logodao.setScale(0.5);
+
 
         this.add.text(512, 300, 'Lets Mine Bitcoin!', {
             fontFamily: 'Arial Black', fontSize: 60, color: '#ffa700',
